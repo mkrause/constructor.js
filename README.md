@@ -11,13 +11,13 @@ Utility library for creating JavaScript constructors. A "constructor" being a fu
 Example:
 
 ```js
-    import constructor from 'constructor.js';
+    import constructor from '@mkrause/constructor';
     
     const MyConstructor = constructor({ x: String, y: Number });
     const myInstance = MyConstructor({ x: "foo", y: 42 });
     myInstance instanceof MyConstructor; // true
     
-    const myInstance = MyConstructor({ x: "foo", y: "42" }); // Throws `InvalidInstanceException`
+    MyConstructor({ x: "foo", y: "42" }); // Throws `InvalidInstanceException`
 ```
 
 
