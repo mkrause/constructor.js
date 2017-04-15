@@ -1,0 +1,32 @@
+{
+    "name": "@mkrause/constructor",
+    "version": "1.0.0",
+    "description": "Create JavaScript constructors using declarative schema definitions.",
+    "author": "mkrause",
+    "license": "MIT",
+    "repository": "https://github.com/mkrause/constructor.js",
+    
+    "main": "dist/constructor.js",
+    "module": "src/constructor.js",
+    
+    "scripts": {
+        "test": "mocha --compilers js:babel-core/register --recursive tests"
+    },
+    
+    "dependencies": {
+        "lodash": "^4.15.0"
+    },
+    "devDependencies": {
+        "babel-core": "^6.16.0",
+        "babel-preset-es2015": "^6.16.0",
+        "babel-preset-es2016": "^6.16.0",
+        "babel-preset-es2017": "^6.16.0",
+        "babel-plugin-transform-builtin-extend": "^1.1.2",
+        "babel-plugin-transform-object-rest-spread": "^6.20.1",
+        
+        "webpack": "^2.2.1",
+        "babel-loader": "^6.3.2",
+        
+        "mocha": "^3.2.0"
+    }
+}
