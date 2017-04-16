@@ -4,7 +4,7 @@ import _ from 'lodash';
 import constructor from '../src/constructor.js';
 
 // Shorthand
-const val = constructor.value;
+const val = constructor.internal;
 
 describe('constructor.js', function() {
     describe('constructor creation', function() {

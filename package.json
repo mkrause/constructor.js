@@ -1,6 +1,6 @@
 {
     "name": "@mkrause/constructor",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "description": "Create JavaScript constructors using declarative schema definitions.",
     "author": "mkrause",
     "license": "MIT",
@@ -10,6 +10,7 @@
     "module": "src/constructor.js",
     
     "scripts": {
+        "build": "webpack -p",
         "test": "mocha --compilers js:babel-core/register --recursive tests"
     },
     

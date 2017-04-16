@@ -109,7 +109,7 @@ const interpret = (schema, value) => {
 };
 
 // Symbol used to store the internal value of an instance
-const _internalValue = Symbol('internal-value');
+const internal = Symbol('internal-value');
 
 // Take a schema (represented as a JS object), and return a JS constructor which constructs
 // instances of that schema.
@@ -133,7 +133,7 @@ const constructor = (schema = undefined) => {
             }
         }
         
-        this[_internalValue] = instance;
+        this[internal] = instance;
     };
     
     // Expose the schema on the constructor
@@ -154,5 +154,5 @@ const constructor = (schema = undefined) => {
     return Constructor;
 };
 
-constructor.value = _internalValue;
+constructor.internal = internal;
 export default constructor;
