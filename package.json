@@ -1,6 +1,6 @@
 {
     "name": "@mkrause/constructor",
-    "version": "1.0.1",
+    "version": "1.0.2",
     "description": "Create JavaScript constructors using declarative schema definitions.",
     "author": "mkrause",
     "license": "MIT",

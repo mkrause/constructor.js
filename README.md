@@ -1,9 +1,7 @@
 
 # constructor.js
 
-Create JavaScript constructors using declarative schema definitions.
-
-Utility library for creating JavaScript constructors. A "constructor" being a function that takes some argument and creates a new object of a certain type. Supports validation of the argument through a basic schema mechanism.
+Utility library to create JavaScript constructors based on a declarative schema.
 
 
 ## Usage:
@@ -20,7 +18,7 @@ Example:
     MyConstructor({ x: "foo", y: "42" }); // Throws `InvalidInstanceException`
 ```
 
-Each instance stores the validated value in a property accessed through a special symbol `constructor.value`:
+Each instance stores the validated value in a property accessed through a special symbol `constructor.internal`:
 
 ```js
     const Person = constructor({ name: String, score: Number });
